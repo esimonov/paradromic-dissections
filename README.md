@@ -7,13 +7,13 @@ The idea for a subject was inspired by Dr Tasashi Tokieda's course [Topology & G
 
 Some surprising properties show up when dissecting Möbius strips and similar structures.
 
-<blockquote>
-A mathematician confided
-That a Mobius band is one-sided,
-And you'll get quite a laugh,
+```text
+> A mathematician confided
+> That a Mobius band is one-sided,
+> And you'll get quite a laugh,
 If you cut one in half,
 For it stays in one piece when divided.
-</blockquote>
+```
 
 ![Cut along the centerline](/assets/Moebiusband-1s.svg)
 
