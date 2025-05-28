@@ -32,7 +32,7 @@ Let's use the CLI to verify what we've just seen!
 Enter the number of initial half-twists (or 'q' to quit) : 1
 Enter D>=2 to mark the line 1/D along which the strip will be dissected (or 'q' to quit) : 2
 ---------
-When dissecting a strip with 1 half-twist of length L 1/2 way across its width, you get a single connected strip which is 2 times longer and slimmer and than the original one:
+When dissecting a strip with 1 half-twist of length L 1/2 way across its width, you get a single connected strip which is 2 times longer and slimmer than the original one:
 
 Length: 2L
 Number of half-twists: 4

@@ -41,7 +41,7 @@
 (define (format-short-summary resulting-lengths resulting-half-twists)
   (let ((have-same-num-half-twists? (eq? (car resulting-half-twists) (cdr resulting-half-twists))))
     (if (null? (cdr resulting-half-twists))
-      (format "a single connected strip which is ~a times longer and slimmer and than the original one:\n\n" (car resulting-lengths))
+      (format "a single connected strip which is ~a times longer and slimmer than the original one:\n\n" (car resulting-lengths))
       (format "two ~a strips~a:\n\n"
         (if (zero? (car resulting-half-twists)) "disconnected" "linked")
         (if have-same-num-half-twists? " of the same length" ", one of which is twice as long as the other")))))

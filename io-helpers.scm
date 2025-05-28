@@ -33,7 +33,7 @@
   (let ((dissection-denominator (string->number input)))
     (cond ((not dissection-denominator) (format #f "Input '~a' is not a valid number.\n" input))
       ((not (real? dissection-denominator)) "D must be a real number\n")
-      ((< dissection-denominator 2) "D must be greater or equal to 2\n")
+      ((< dissection-denominator 2) "D must be greater than or equal to 2\n")
       (else dissection-denominator))))
 
 (define (allow-quitting prompt) (string-append prompt " (or 'q' to quit) : "))
