@@ -1,6 +1,9 @@
-# Paradromic rings dissections
+# Möbius strip dissections CLI
 
-The main goal of the project was to explore Scheme's capabilities as a general purpose programming language.
+Paradromic rings are shapes created by cutting a Möbius strip across its width. This CLI can be used for computing their basic structural properties.
+
+The main goal of the project was to explore Scheme's capabilities as a general purpose programming language. It's implemented in R5RS Scheme and uses SRFI-28 for string formatting.
+
 The idea for a subject was inspired by Dr Tadashi Tokieda's course [Topology & Geometry](https://youtu.be/SXHHvoaSctc?si=9bXOmKjzHKfTlmgv).
 
 ## Why?
@@ -20,11 +23,6 @@ For it stays in one piece when divided.
 When the strip is dissected off-center instead, the result may seem even stranger:
 
 ![Off-center cut](/assets/Moebiusband-2s.svg)
-
-Original image sources:
-
-* [Cut along the centerline](https://commons.wikimedia.org/wiki/File:Moebiusband-1s.svg)
-* [Off-center cut](https://commons.wikimedia.org/wiki/File:Moebiusband-2s.svg)
 
 Let's use the CLI to verify what we've just seen!
 
@@ -106,4 +104,24 @@ Strip #2
 Length: L
 Width: 5W/7
 Number of half-twists: 101
+```
+
+Original image sources:
+
+* [Cut along the centerline](https://commons.wikimedia.org/wiki/File:Moebiusband-1s.svg)
+* [Off-center cut](https://commons.wikimedia.org/wiki/File:Moebiusband-2s.svg)
+
+## How to run
+
+Compile and run with [CHICKEN Scheme](https://call-cc.org/):
+
+```sh
+csc main.scm
+./main
+```
+
+Or interpret without compilation:
+
+```sh
+csi main.scm
 ```
