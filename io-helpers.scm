@@ -22,12 +22,12 @@
               (display result)
               (loop)) result))))))
 
-(define (validate-num-half-twists input)
-  (let ((num-twists (string->number input)))
-    (cond ((not num-twists) (format #f "Input '~a' is not a valid number\n" input))
-      ((not (integer? num-twists)) "Number of half-twists must be an integer\n")
-      ((< num-twists 0) "Number of half-twists must be non-negative\n")
-      (else num-twists))))
+(define (validate-half-twists input)
+  (let ((half-twists (string->number input)))
+    (cond ((not half-twists) (format #f "Input '~a' is not a valid number\n" input))
+      ((not (integer? half-twists)) "Number of half-twists must be an integer\n")
+      ((< half-twists 0) "Number of half-twists must be non-negative\n")
+      (else half-twists))))
 
 (define (validate-dissection-denominator input)
   (let ((dissection-denominator (string->number input)))

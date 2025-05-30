@@ -46,7 +46,7 @@ Let L and W denote the initial length and width of the strip, respecitively.
 Enter the number of initial half-twists (or 'q' to quit) : 1
 Enter D>=2 to mark the line 1/D along which the strip will be dissected (or 'q' to quit) : 3
 ---------
-When dissecting a strip with 1 half-twist 1/3 way across its width, you get two linked strips, one of which is twice as long as the other:
+When dissecting a strip with 1 half-twist 1/3 way across its width, you get two linked strips, one of which is 2 times longer than the other:
 
 Strip #1
 Length: 2L
@@ -93,7 +93,7 @@ Basic insanity check:
 Enter the number of initial half-twists (or 'q' to quit) : 101
 Enter D>=2 to mark the line 1/D along which the strip will be dissected (or 'q' to quit) : 7
 ---------
-When dissecting a strip with 101 half-twists 1/7 way across its width, you get two linked strips, one of which is twice as long as the other:
+When dissecting a strip with 101 half-twists 1/7 way across its width, you get two linked strips, one of which is 2 times longer than the other:
 
 Strip #1
 Length: 2L
