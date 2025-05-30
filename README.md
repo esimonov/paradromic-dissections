@@ -1,7 +1,7 @@
 # Paradromic rings dissections
 
 The main goal of the project was to explore Scheme's capabilities as a general purpose programming language.
-The idea for a subject was inspired by Dr Tasashi Tokieda's course [Topology & Geometry](https://youtu.be/SXHHvoaSctc?si=9bXOmKjzHKfTlmgv).
+The idea for a subject was inspired by Dr Tadashi Tokieda's course [Topology & Geometry](https://youtu.be/SXHHvoaSctc?si=9bXOmKjzHKfTlmgv).
 
 ## Why?
 
@@ -29,34 +29,81 @@ Original image sources:
 Let's use the CLI to verify what we've just seen!
 
 ```text
+Let L and W denote the initial length and width of the strip, respecitively.
+
 Enter the number of initial half-twists (or 'q' to quit) : 1
 Enter D>=2 to mark the line 1/D along which the strip will be dissected (or 'q' to quit) : 2
 ---------
-When dissecting a strip with 1 half-twist of length L 1/2 way across its width, you get a single connected strip which is 2 times longer and slimmer than the original one:
+When dissecting a strip with 1 half-twist 1/2 way across its width, you get a single connected strip which is 2 times longer than the original one:
 
 Length: 2L
+Width: W/2
 Number of half-twists: 4
 
 
 ---------
+
+Let L and W denote the initial length and width of the strip, respecitively.
 
 Enter the number of initial half-twists (or 'q' to quit) : 1
 Enter D>=2 to mark the line 1/D along which the strip will be dissected (or 'q' to quit) : 3
 ---------
-When dissecting a strip with 1 half-twist of length L 1/3 way across its width, you get two linked strips, one of which is twice as long as the other:
+When dissecting a strip with 1 half-twist 1/3 way across its width, you get two linked strips, one of which is twice as long as the other:
 
 Strip #1
 Length: 2L
+Width: W/3
 Number of half-twists: 4
 
 Strip #2
 Length: L
+Width: W/3
 Number of half-twists: 1
 
 
 
 ---------
 
+Let L and W denote the initial length and width of the strip, respecitively.
+
 Enter the number of initial half-twists (or 'q' to quit) : q
 Goodbye!
+```
+
+Basic santity check:
+
+```text
+Enter the number of initial half-twists (or 'q' to quit) : 0
+Enter D>=2 to mark the line 1/D along which the strip will be dissected (or 'q' to quit) : 2
+---------
+When dissecting an untwisted strip 1/2 way across its width, you get two disconnected strips of the same length:
+
+Strip #1
+Length: L
+Width: W/2
+Number of half-twists: 0
+
+Strip #2
+Length: L
+Width: W/2
+Number of half-twists: 0
+```
+
+Basic insanity check:
+
+```text
+Enter the number of initial half-twists (or 'q' to quit) : 101
+Enter D>=2 to mark the line 1/D along which the strip will be dissected (or 'q' to quit) : 7
+---------
+When dissecting a strip with 101 half-twists 1/7 way across its width, you get two linked strips, one of which is twice as long as the other:
+
+Strip #1
+Length: 2L
+Width: W/7
+Number of half-twists: 204
+
+Strip #2
+Length: L
+Width: 5W/7
+Number of half-twists: 101
 ```
