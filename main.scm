@@ -11,7 +11,7 @@
         "When dissecting ~a 1/~a way across its width, you get ~a~a\n~a\n"
         (describe-initial-structure half-twists-initial)
         dissection-denominator
-        (format-short-summary lengths widths half-twists)
+        (format-short-summary lengths half-twists)
         (format-detailed-summary lengths widths half-twists)
         bar))
     'continue))
@@ -46,7 +46,7 @@
       " half-twist"
       (if (= half-twists-initial 1) "" "s"))))
 
-(define (format-short-summary lengths widths half-twists)
+(define (format-short-summary lengths half-twists)
   (let ((have-same-half-twists? (eq? (car half-twists) (cdr half-twists))))
     (if (null? (cdr half-twists))
       "a single connected strip which is 2 times longer than the original one:\n\n"
